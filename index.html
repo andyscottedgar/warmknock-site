@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WarmKnock — Motivated Seller Leads You Can Hear</title>
+<meta name="description" content="WarmKnock qualifies motivated sellers by phone and hands you the whole conversation — full transcript plus motivation, timeline, condition and price. One buyer per lead. Sold once, ever.">
+<meta property="og:title" content="WarmKnock — Motivated Seller Leads You Can Hear">
+<meta property="og:description" content="We qualify motivated sellers by phone and send you the whole conversation, not a 'verified' badge. One buyer per lead. Sold once, ever.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://warmknock.com/">
+<meta name="robots" content="index,follow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23171a1f'/%3E%3Crect x='5.5' y='6' width='13' height='20' rx='1.6' fill='none' stroke='%23f2efe9' stroke-width='2'/%3E%3Ccircle cx='15' cy='17' r='1.5' fill='%23e8703a'/%3E%3Cpath d='M22 11.5c2.4 2.6 2.4 6.4 0 9' stroke='%23e8703a' stroke-width='2.2' fill='none' stroke-linecap='round'/%3E%3Cpath d='M26.5 8.5c3.8 4.4 3.8 10.6 0 15' stroke='%23e8703a' stroke-width='1.8' fill='none' stroke-linecap='round' opacity='.55'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --coal:#171a1f; --coal-deep:#0e1116; --slate:#3f5666;
+    --ember:#e8703a; --ember-deep:#c8551f; --ember-soft:#fbeadf;
+    --paper:#f7f5f2; --card:#ffffff; --ink:#1c2228; --muted:#5f6a73;
+    --line:#e4e0d8;
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+
+  header{background:var(--paper);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--coal)}
+  .brand svg{width:34px;height:34px;flex-shrink:0}
+  .brand .name{font-weight:800;font-size:23px;letter-spacing:-.02em}
+  .nav .cta-sm{font-size:14px;font-weight:700;color:#fff;background:var(--coal);border-radius:8px;
+    padding:10px 18px;text-decoration:none}
+  .nav .cta-sm:hover{background:var(--ember-deep)}
+
+  .hero{background:linear-gradient(180deg,var(--coal) 0%,var(--coal-deep) 100%);color:#f0eee9;
+    padding:74px 0 0;overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center}
+  @media(max-width:760px){.hero-grid{grid-template-columns:1fr}}
+  .hero h1{font-size:clamp(33px,5.4vw,52px);line-height:1.06;font-weight:800;letter-spacing:-.025em}
+  .hero h1 em{font-style:normal;color:var(--ember)}
+  .hero p.lead{font-size:18px;color:#b8bfc7;margin-top:18px;max-width:48ch}
+  .hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 8px}
+  .btn{display:inline-block;font-weight:700;font-size:16px;border-radius:8px;padding:14px 26px;
+    text-decoration:none;border:2px solid transparent}
+  .btn.primary{background:var(--ember);color:#1a0d06}
+  .btn.primary:hover{background:var(--ember-deep);color:#fff}
+  .btn.ghost{border-color:#4a565f;color:#e2e6ea}
+  .btn.ghost:hover{border-color:var(--ember);color:var(--ember)}
+  .hero .fine{font-size:13px;color:#828d97;margin-bottom:28px}
+  .hero-art{align-self:end;justify-self:center;width:min(330px,80%)}
+  .edge-band{display:block;width:100%;height:44px}
+
+  .ticks{background:var(--card);border-bottom:1px solid var(--line)}
+  .ticks .wrap{display:flex;flex-wrap:wrap;gap:6px 30px;justify-content:center;padding:16px 22px}
+  .tick{display:flex;align-items:center;gap:8px;font-size:14.5px;font-weight:600;color:var(--slate)}
+  .tick svg{width:17px;height:17px;flex-shrink:0}
+
+  section.block{padding:62px 0}
+  .kicker{font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--ember-deep)}
+  h2{font-size:clamp(25px,3.5vw,35px);line-height:1.14;margin:10px 0 14px;color:var(--coal);
+    font-weight:800;letter-spacing:-.02em}
+  .sub{color:var(--muted);max-width:64ch;font-size:16.5px}
+
+  .compare{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:32px}
+  @media(max-width:760px){.compare{grid-template-columns:1fr}}
+  .col{border-radius:14px;padding:24px 22px;border:1px solid var(--line);background:var(--card)}
+  .col.them{background:#f1efeb}
+  .col.us{border-color:var(--ember);box-shadow:0 2px 14px rgba(232,112,58,.12)}
+  .col h3{font-size:17px;margin-bottom:14px;letter-spacing:-.01em}
+  .col.them h3{color:var(--muted)}
+  .col.us h3{color:var(--ember-deep)}
+  .col ul{list-style:none}
+  .col li{display:grid;grid-template-columns:20px 1fr;gap:10px;align-items:start;
+    font-size:15px;padding:7px 0;color:var(--muted)}
+  .col.us li{color:var(--ink)}
+  .col li svg{width:18px;height:18px;margin-top:3px}
+
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+  @media(max-width:760px){.steps{grid-template-columns:1fr}}
+  .step{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px 22px;
+    box-shadow:0 1px 2px rgba(23,26,31,.05)}
+  .step .num{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--ember-deep);
+    letter-spacing:.12em}
+  .step h3{font-size:18.5px;color:var(--coal);margin:8px 0 8px;letter-spacing:-.01em}
+  .step p{font-size:15px;color:var(--muted)}
+
+  .why{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px 28px;margin-top:30px}
+  @media(max-width:700px){.why-grid{grid-template-columns:1fr}}
+  .why-item{display:grid;grid-template-columns:26px 1fr;gap:12px;align-items:start}
+  .why-item svg{width:24px;height:24px;margin-top:2px}
+  .why-item h3{font-size:17px;color:var(--coal);margin-bottom:4px;letter-spacing:-.01em}
+  .why-item p{font-size:14.5px;color:var(--muted)}
+
+  .honest{border-left:4px solid var(--ember);background:var(--ember-soft);border-radius:0 12px 12px 0;
+    padding:20px 24px;margin-top:34px}
+  .honest p{font-size:15.5px;color:#4a3b32}
+  .honest p b{color:var(--coal)}
+
+  .contact{background:linear-gradient(180deg,var(--coal) 0%,var(--coal-deep) 100%);color:#f0eee9;
+    text-align:center}
+  .contact h2{color:#fff}
+  .contact .sub{margin:0 auto;color:#b8bfc7}
+  .contact .ctas{margin-top:30px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .contact .reach{margin-top:26px;font-size:15px;color:#b8bfc7}
+  .contact .reach a{color:var(--ember);text-decoration:none;font-weight:600}
+  .contact .reach a:hover{text-decoration:underline}
+
+  footer{background:var(--coal-deep);color:#828d97;padding:30px 0 40px;font-size:13px;line-height:1.7}
+  footer .fbrand{display:flex;align-items:center;gap:8px;color:#d6dade;font-weight:800;font-size:18px;
+    margin-bottom:10px;letter-spacing:-.02em}
+  footer .fbrand svg{width:24px;height:24px}
+  footer a{color:#c9cfd4}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#">
+      <svg viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="7" fill="#171a1f"/>
+        <rect x="5.5" y="6" width="13" height="20" rx="1.6" fill="none" stroke="#f2efe9" stroke-width="2"/>
+        <circle cx="15" cy="17" r="1.5" fill="#e8703a"/>
+        <path d="M22 11.5c2.4 2.6 2.4 6.4 0 9" stroke="#e8703a" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <path d="M26.5 8.5c3.8 4.4 3.8 10.6 0 15" stroke="#e8703a" stroke-width="1.8" fill="none" stroke-linecap="round" opacity=".55"/>
+      </svg>
+      <span class="name">WarmKnock</span>
+    </a>
+    <a class="cta-sm" href="#contact">Get a free lead</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Leads you can <em>actually hear.</em></h1>
+      <p class="lead">We knock on doors and work the phones to find motivated sellers — then we hand you the whole conversation, not a checkbox. You read the seller's situation in their own words before you spend a dollar chasing them.</p>
+      <div class="ctas">
+        <a class="btn primary" href="#contact">Claim your first lead free</a>
+        <a class="btn ghost" href="#how">How it works</a>
+      </div>
+      <p class="fine">One buyer per lead. Sold once, ever. No contracts, no monthly minimums.</p>
+    </div>
+    <svg class="hero-art" viewBox="0 0 300 220" aria-hidden="true">
+      <rect x="34" y="18" width="118" height="164" rx="6" fill="#20252c" stroke="#e8703a" stroke-width="4"/>
+      <rect x="50" y="34" width="86" height="60" rx="4" fill="#0e1116" stroke="#7a8894" stroke-width="3"/>
+      <rect x="50" y="106" width="86" height="60" rx="4" fill="#0e1116" stroke="#7a8894" stroke-width="3"/>
+      <circle cx="140" cy="100" r="5.5" fill="#e8703a"/>
+      <path d="M176 66c11 12 11 56 0 68" stroke="#e8703a" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <path d="M204 48c17 20 17 84 0 104" stroke="#e8703a" stroke-width="5" fill="none" stroke-linecap="round" opacity=".62"/>
+      <path d="M232 30c23 28 23 112 0 140" stroke="#e8703a" stroke-width="4" fill="none" stroke-linecap="round" opacity=".34"/>
+      <g stroke="#7a8894" stroke-width="4" stroke-linecap="round">
+        <path d="M42 202v10"/><path d="M58 196v22"/><path d="M74 190v34"/><path d="M90 199v16"/>
+        <path d="M106 193v28"/><path d="M122 201v12"/><path d="M138 195v24"/><path d="M154 199v16"/>
+        <path d="M170 191v32"/><path d="M186 200v14"/><path d="M202 196v22"/><path d="M218 202v10"/>
+      </g>
+    </svg>
+  </div>
+  <svg class="edge-band" viewBox="0 0 1200 44" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 44 L0 26 L1200 6 L1200 44 Z" fill="#f7f5f2"/>
+  </svg>
+</div>
+
+<div class="ticks">
+  <div class="wrap">
+    <span class="tick"><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#3f5666" stroke-width="2"/><path d="M6 10.5l2.5 2.5L14 7.5" stroke="#3f5666" stroke-width="2" stroke-linecap="round"/></svg>Full call transcript included</span>
+    <span class="tick"><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#3f5666" stroke-width="2"/><path d="M6 10.5l2.5 2.5L14 7.5" stroke="#3f5666" stroke-width="2" stroke-linecap="round"/></svg>Exclusive — one buyer, ever</span>
+    <span class="tick"><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#3f5666" stroke-width="2"/><path d="M6 10.5l2.5 2.5L14 7.5" stroke="#3f5666" stroke-width="2" stroke-linecap="round"/></svg>Motivation, timeline, condition, price</span>
+    <span class="tick"><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#3f5666" stroke-width="2"/><path d="M6 10.5l2.5 2.5L14 7.5" stroke="#3f5666" stroke-width="2" stroke-linecap="round"/></svg>7-day replacement or refund</span>
+  </div>
+</div>
+
+<section class="block" id="proof">
+  <div class="wrap">
+    <p class="kicker">The difference</p>
+    <h2>A badge is not proof. A conversation is.</h2>
+    <p class="sub">Most lead sellers hand you a name, a number, and a "phone verified" stamp. You find out whether the lead is real by burning your own hours on the phone. We think you should know before you dial.</p>
+    <div class="compare">
+      <div class="col them">
+        <h3>What you usually get</h3>
+        <ul>
+          <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#9aa3ab" stroke-width="2"/><path d="M7 7l6 6M13 7l-6 6" stroke="#9aa3ab" stroke-width="2" stroke-linecap="round"/></svg>A name, a phone number, and a "verified" badge</li>
+          <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#9aa3ab" stroke-width="2"/><path d="M7 7l6 6M13 7l-6 6" stroke="#9aa3ab" stroke-width="2" stroke-linecap="round"/></svg>The same lead sold to three or four buyers at once</li>
+          <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#9aa3ab" stroke-width="2"/><path d="M7 7l6 6M13 7l-6 6" stroke="#9aa3ab" stroke-width="2" stroke-linecap="round"/></svg>No way to judge motivation until you have already paid</li>
+          <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#9aa3ab" stroke-width="2"/><path d="M7 7l6 6M13 7l-6 6" stroke="#9aa3ab" stroke-width="2" stroke-linecap="round"/></svg>A refund process that makes you prove you called</li>
+        </ul>
+      </div>
+      <div class="col us">
+        <h3>What WarmKnock sends</h3>
+        <ul>
+          <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#e8703a" stroke-width="2"/><path d="M6 10.5l2.5 2.5L14 7.5" stroke="#e8703a" stroke-width="2" stroke-linecap="round"/></svg>The full transcript of the seller conversation, start to finish</li>
+          <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#e8703a" stroke-width="2"/><path d="M6 10.5l2.5 2.5L14 7.5" stroke="#e8703a" stroke-width="2" stroke-linecap="round"/></svg>Structured qualification data: motivation, timeline, condition, price expectation</li>
+          <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#e8703a" stroke-width="2"/><path d="M6 10.5l2.5 2.5L14 7.5" stroke="#e8703a" stroke-width="2" stroke-linecap="round"/></svg>One buyer per lead — sold to you and to nobody else, ever</li>
+          <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#e8703a" stroke-width="2"/><path d="M6 10.5l2.5 2.5L14 7.5" stroke="#e8703a" stroke-width="2" stroke-linecap="round"/></svg>Seven days to flag a bad lead, no interrogation attached</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block why" id="how">
+  <div class="wrap">
+    <p class="kicker">How it works</p>
+    <h2>Three steps, and you own the whole record.</h2>
+    <div class="steps">
+      <div class="step">
+        <p class="num">STEP 1</p>
+        <h3>We find the seller</h3>
+        <p>We do the outreach ourselves — knocking and calling homeowners directly. No recycled marketplace lists and no lead resold from somewhere else.</p>
+      </div>
+      <div class="step">
+        <p class="num">STEP 2</p>
+        <h3>We qualify on the call</h3>
+        <p>We ask the questions you would ask: why they are selling, how soon they need to move, what shape the property is in, and what they expect for it.</p>
+      </div>
+      <div class="step">
+        <p class="num">STEP 3</p>
+        <h3>You get the whole conversation</h3>
+        <p>The complete transcript plus the qualification summary lands in your inbox. You read the seller's own words, then decide whether the lead is worth your time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="kicker">Why buyers work with us</p>
+    <h2>Built for people who buy leads for a living.</h2>
+    <div class="why-grid">
+      <div class="why-item">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M4 12h3l2.5-6 4 13 2.5-7h4" stroke="#3f5666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div><h3>You judge motivation yourself</h3>
+        <p>Motivation is the only thing that decides whether a lead converts, and it is exactly the thing a badge cannot tell you. Read the conversation and make your own call.</p></div>
+      </div>
+      <div class="why-item">
+        <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="10" width="16" height="10" rx="2" stroke="#3f5666" stroke-width="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3" stroke="#3f5666" stroke-width="2" stroke-linecap="round"/></svg>
+        <div><h3>Exclusive means exclusive</h3>
+        <p>We sell each lead one time, to one buyer. Not resold next week at a discount, not dropped onto a marketplace later. You are never racing another investor to the same phone.</p></div>
+      </div>
+      <div class="why-item">
+        <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#3f5666" stroke-width="2"/><path d="M12 7v5l3.5 2.5" stroke="#3f5666" stroke-width="2" stroke-linecap="round"/></svg>
+        <div><h3>No contracts, no minimums</h3>
+        <p>Buy a lead when one fits what you are working on. There is no subscription to cancel and no monthly volume you have to commit to in advance.</p></div>
+      </div>
+      <div class="why-item">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z" stroke="#3f5666" stroke-width="2" stroke-linejoin="round"/><path d="M9 12l2 2 4-4.5" stroke="#3f5666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div><h3>A refund you do not have to fight for</h3>
+        <p>Dead number, wrong owner, already listed with an agent — tell us within seven days and it is a replacement or your money back, whichever you prefer.</p></div>
+      </div>
+    </div>
+    <div class="honest">
+      <p><b>Straight about what this is:</b> a WarmKnock lead is a homeowner who had a real conversation with us and told us where they stand. It is not a signed contract and it is not a guarantee of a deal. What we promise is that nothing is hidden from you — you see the same conversation we saw, and you decide from there.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block contact" id="contact">
+  <div class="wrap">
+    <p class="kicker" style="color:var(--ember)">Founding buyers</p>
+    <h2>Your first lead is free.</h2>
+    <p class="sub">We are onboarding a small group of founding buyers right now. Take one qualified lead, transcript and all, at no cost — then tell us whether it was worth paying for. Founding-buyer pricing holds for the first buyers in the door.</p>
+    <div class="ctas">
+      <a class="btn primary" href="mailto:hello@warmknock.com?subject=Founding%20buyer%20%E2%80%94%20free%20lead&body=Where%20you%20buy%3A%0A%0AWhat%20you%20do%20with%20a%20lead%20(assign%2C%20buy%20and%20hold%2C%20both)%3A%0A%0ABest%20way%20to%20reach%20you%3A">Email us to claim it</a>
+    </div>
+    <p class="reach">Or write to us directly: <a href="mailto:hello@warmknock.com">hello@warmknock.com</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fbrand">
+      <svg viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="7" fill="#20252c"/>
+        <rect x="5.5" y="6" width="13" height="20" rx="1.6" fill="none" stroke="#d6dade" stroke-width="2"/>
+        <circle cx="15" cy="17" r="1.5" fill="#e8703a"/>
+        <path d="M22 11.5c2.4 2.6 2.4 6.4 0 9" stroke="#e8703a" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <path d="M26.5 8.5c3.8 4.4 3.8 10.6 0 15" stroke="#e8703a" stroke-width="1.8" fill="none" stroke-linecap="round" opacity=".55"/>
+      </svg>
+      WarmKnock
+    </div>
+    <p>WarmKnock is a trade name of SteelVoyage LLC, an Ohio limited liability company.</p>
+    <p>Contact: <a href="mailto:hello@warmknock.com">hello@warmknock.com</a></p>
+    <p>WarmKnock sells sales leads to real estate investors. We are not a real estate brokerage, we do not provide legal, tax or investment advice, and nothing here is a guarantee of any transaction or result. Buyers are responsible for their own diligence and for their own compliance when contacting a homeowner.</p>
+    <p>&copy; 2026 SteelVoyage LLC. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
