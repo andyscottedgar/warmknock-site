@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>WarmKnock — Motivated Seller Leads You Can Hear</title>
-<meta name="description" content="WarmKnock qualifies motivated sellers by phone and hands you the whole conversation — full transcript plus motivation, timeline, condition and price. One buyer per lead. Sold once, ever.">
-<meta property="og:title" content="WarmKnock — Motivated Seller Leads You Can Hear">
-<meta property="og:description" content="We qualify motivated sellers by phone and send you the whole conversation, not a 'verified' badge. One buyer per lead. Sold once, ever.">
+<title>WarmKnock — Exclusive Motivated Seller Leads</title>
+<meta name="description" content="Every WarmKnock lead is a homeowner who has already said they want to sell, with their own answers before you dial. One buyer per lead, sold once ever. If a lead is junk you don't pay, and we don't ask you to prove anything.">
+<meta property="og:title" content="WarmKnock — Exclusive Motivated Seller Leads">
+<meta property="og:description" content="A homeowner who has already said they want to sell, with their own answers before you dial. One buyer per lead. If it's junk, you don't pay — and we never ask you to prove it.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://warmknock.com/">
 <meta name="robots" content="index,follow">
@@ -40,7 +40,7 @@
   @media(max-width:760px){.hero-grid{grid-template-columns:1fr}}
   .hero h1{font-size:clamp(33px,5.4vw,52px);line-height:1.06;font-weight:800;letter-spacing:-.025em}
   .hero h1 em{font-style:normal;color:var(--ember)}
-  .hero p.lead{font-size:18px;color:#b8bfc7;margin-top:18px;max-width:48ch}
+  .hero p.lead{font-size:18px;color:#b8bfc7;margin-top:18px;max-width:50ch}
   .hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 8px}
   .btn{display:inline-block;font-weight:700;font-size:16px;border-radius:8px;padding:14px 26px;
     text-decoration:none;border:2px solid transparent}
@@ -62,38 +62,37 @@
     text-transform:uppercase;color:var(--ember-deep)}
   h2{font-size:clamp(25px,3.5vw,35px);line-height:1.14;margin:10px 0 14px;color:var(--coal);
     font-weight:800;letter-spacing:-.02em}
-  .sub{color:var(--muted);max-width:64ch;font-size:16.5px}
+  .sub{color:var(--muted);max-width:66ch;font-size:16.5px}
 
-  .compare{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:32px}
-  @media(max-width:760px){.compare{grid-template-columns:1fr}}
-  .col{border-radius:14px;padding:24px 22px;border:1px solid var(--line);background:var(--card)}
-  .col.them{background:#f1efeb}
-  .col.us{border-color:var(--ember);box-shadow:0 2px 14px rgba(232,112,58,.12)}
-  .col h3{font-size:17px;margin-bottom:14px;letter-spacing:-.01em}
-  .col.them h3{color:var(--muted)}
-  .col.us h3{color:var(--ember-deep)}
-  .col ul{list-style:none}
-  .col li{display:grid;grid-template-columns:20px 1fr;gap:10px;align-items:start;
-    font-size:15px;padding:7px 0;color:var(--muted)}
-  .col.us li{color:var(--ink)}
-  .col li svg{width:18px;height:18px;margin-top:3px}
+  /* what arrives with a lead */
+  .spec{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .specgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:32px}
+  @media(max-width:820px){.specgrid{grid-template-columns:1fr}}
+  .specbox{border:1px solid var(--line);border-radius:14px;padding:22px 20px;background:var(--paper)}
+  .specbox h3{font-size:16px;color:var(--coal);letter-spacing:-.01em;margin-bottom:12px}
+  .specbox ul{list-style:none}
+  .specbox li{font-size:15px;color:var(--muted);padding:5px 0 5px 18px;position:relative}
+  .specbox li::before{content:"";position:absolute;left:0;top:12px;width:7px;height:7px;
+    border-radius:50%;background:var(--ember)}
+  .specbox.answers{border-color:var(--ember);background:#fff;
+    box-shadow:0 2px 14px rgba(232,112,58,.12)}
+  .specbox.answers li{color:var(--ink);font-weight:600}
+  .specnote{margin-top:22px;font-size:14.5px;color:var(--muted);max-width:70ch}
 
-  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
-  @media(max-width:760px){.steps{grid-template-columns:1fr}}
-  .step{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px 22px;
-    box-shadow:0 1px 2px rgba(23,26,31,.05)}
-  .step .num{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--ember-deep);
-    letter-spacing:.12em}
-  .step h3{font-size:18.5px;color:var(--coal);margin:8px 0 8px;letter-spacing:-.01em}
-  .step p{font-size:15px;color:var(--muted)}
-
-  .why{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-  .why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px 28px;margin-top:30px}
-  @media(max-width:700px){.why-grid{grid-template-columns:1fr}}
-  .why-item{display:grid;grid-template-columns:26px 1fr;gap:12px;align-items:start}
-  .why-item svg{width:24px;height:24px;margin-top:2px}
-  .why-item h3{font-size:17px;color:var(--coal);margin-bottom:4px;letter-spacing:-.01em}
-  .why-item p{font-size:14.5px;color:var(--muted)}
+  /* junk guarantee */
+  .junkgrid{display:grid;grid-template-columns:1.05fr .95fr;gap:26px;margin-top:30px;align-items:start}
+  @media(max-width:820px){.junkgrid{grid-template-columns:1fr}}
+  .junkcard{border:1px solid var(--line);border-radius:14px;background:var(--card);padding:24px 22px}
+  .junkcard h3{font-size:17px;color:var(--coal);margin-bottom:12px;letter-spacing:-.01em}
+  .junkcard ol{margin-left:18px}
+  .junkcard li{font-size:15px;color:var(--muted);padding:4px 0}
+  .junkcard.not{background:var(--ember-soft);border-color:#f0cdb8}
+  .junkcard.not p{font-size:15px;color:#4a3b32;margin-bottom:12px}
+  .junkcard.not p.big{font-size:16.5px;font-weight:700;color:var(--coal);line-height:1.4}
+  .terms{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+  .term{background:var(--card);border:1px solid var(--line);border-radius:999px;
+    padding:9px 16px;font-size:14px;font-weight:600;color:var(--slate)}
+  .term b{color:var(--ember-deep)}
 
   .honest{border-left:4px solid var(--ember);background:var(--ember-soft);border-radius:0 12px 12px 0;
     padding:20px 24px;margin-top:34px}
@@ -130,20 +129,20 @@
       </svg>
       <span class="name">WarmKnock</span>
     </a>
-    <a class="cta-sm" href="#contact">Get a free lead</a>
+    <a class="cta-sm" href="#contact">Get in touch</a>
   </div>
 </header>
 
 <div class="hero">
   <div class="wrap hero-grid">
     <div>
-      <h1>Leads you can <em>actually hear.</em></h1>
-      <p class="lead">We knock on doors and work the phones to find motivated sellers — then we hand you the whole conversation, not a checkbox. You read the seller's situation in their own words before you spend a dollar chasing them.</p>
+      <h1>They already said <em>they want to sell.</em></h1>
+      <p class="lead">Every lead you buy is a homeowner who has already said they want to sell — and you get their own answers before you dial: why they're selling, how soon, what shape the house is in, and what they want for it. Your first call is a real conversation, not a screening call.</p>
       <div class="ctas">
-        <a class="btn primary" href="#contact">Claim your first lead free</a>
-        <a class="btn ghost" href="#how">How it works</a>
+        <a class="btn primary" href="#contact">Talk to us</a>
+        <a class="btn ghost" href="#spec">What you get</a>
       </div>
-      <p class="fine">One buyer per lead. Sold once, ever. No contracts, no monthly minimums.</p>
+      <p class="fine">One buyer per lead. Sold once, ever. No contracts and no monthly minimums.</p>
     </div>
     <svg class="hero-art" viewBox="0 0 300 220" aria-hidden="true">
       <rect x="34" y="18" width="118" height="164" rx="6" fill="#20252c" stroke="#e8703a" stroke-width="4"/>
@@ -167,104 +166,100 @@
 
 <div class="ticks">
   <div class="wrap">
-    <span class="tick"><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#3f5666" stroke-width="2"/><path d="M6 10.5l2.5 2.5L14 7.5" stroke="#3f5666" stroke-width="2" stroke-linecap="round"/></svg>Full call transcript included</span>
+    <span class="tick"><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#3f5666" stroke-width="2"/><path d="M6 10.5l2.5 2.5L14 7.5" stroke="#3f5666" stroke-width="2" stroke-linecap="round"/></svg>The homeowner's own answers</span>
     <span class="tick"><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#3f5666" stroke-width="2"/><path d="M6 10.5l2.5 2.5L14 7.5" stroke="#3f5666" stroke-width="2" stroke-linecap="round"/></svg>Exclusive — one buyer, ever</span>
-    <span class="tick"><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#3f5666" stroke-width="2"/><path d="M6 10.5l2.5 2.5L14 7.5" stroke="#3f5666" stroke-width="2" stroke-linecap="round"/></svg>Motivation, timeline, condition, price</span>
-    <span class="tick"><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#3f5666" stroke-width="2"/><path d="M6 10.5l2.5 2.5L14 7.5" stroke="#3f5666" stroke-width="2" stroke-linecap="round"/></svg>7-day replacement or refund</span>
+    <span class="tick"><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#3f5666" stroke-width="2"/><path d="M6 10.5l2.5 2.5L14 7.5" stroke="#3f5666" stroke-width="2" stroke-linecap="round"/></svg>Junk is a written list, not our opinion</span>
+    <span class="tick"><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#3f5666" stroke-width="2"/><path d="M6 10.5l2.5 2.5L14 7.5" stroke="#3f5666" stroke-width="2" stroke-linecap="round"/></svg>We never ask you to prove a claim</span>
   </div>
 </div>
 
-<section class="block" id="proof">
+<section class="block spec" id="spec">
   <div class="wrap">
-    <p class="kicker">The difference</p>
-    <h2>A badge is not proof. A conversation is.</h2>
-    <p class="sub">Most lead sellers hand you a name, a number, and a "phone verified" stamp. You find out whether the lead is real by burning your own hours on the phone. We think you should know before you dial.</p>
-    <div class="compare">
-      <div class="col them">
-        <h3>What you usually get</h3>
+    <p class="kicker">What arrives with a lead</p>
+    <h2>Exactly what you're buying, listed in advance.</h2>
+    <p class="sub">No mystery about what lands in your account. Every WarmKnock lead carries all of the following — not most of the time, every time.</p>
+    <div class="specgrid">
+      <div class="specbox">
+        <h3>The property and the person</h3>
         <ul>
-          <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#9aa3ab" stroke-width="2"/><path d="M7 7l6 6M13 7l-6 6" stroke="#9aa3ab" stroke-width="2" stroke-linecap="round"/></svg>A name, a phone number, and a "verified" badge</li>
-          <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#9aa3ab" stroke-width="2"/><path d="M7 7l6 6M13 7l-6 6" stroke="#9aa3ab" stroke-width="2" stroke-linecap="round"/></svg>The same lead sold to three or four buyers at once</li>
-          <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#9aa3ab" stroke-width="2"/><path d="M7 7l6 6M13 7l-6 6" stroke="#9aa3ab" stroke-width="2" stroke-linecap="round"/></svg>No way to judge motivation until you have already paid</li>
-          <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#9aa3ab" stroke-width="2"/><path d="M7 7l6 6M13 7l-6 6" stroke="#9aa3ab" stroke-width="2" stroke-linecap="round"/></svg>A refund process that makes you prove you called</li>
+          <li>A lead reference number</li>
+          <li>The property address</li>
+          <li>Property type — single family, condo, 2–4 unit, or other residential</li>
+          <li>The homeowner's name</li>
+          <li>The homeowner's phone number</li>
         </ul>
       </div>
-      <div class="col us">
-        <h3>What WarmKnock sends</h3>
+      <div class="specbox answers">
+        <h3>Their four answers, in their words</h3>
         <ul>
-          <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#e8703a" stroke-width="2"/><path d="M6 10.5l2.5 2.5L14 7.5" stroke="#e8703a" stroke-width="2" stroke-linecap="round"/></svg>The full transcript of the seller conversation, start to finish</li>
-          <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#e8703a" stroke-width="2"/><path d="M6 10.5l2.5 2.5L14 7.5" stroke="#e8703a" stroke-width="2" stroke-linecap="round"/></svg>Structured qualification data: motivation, timeline, condition, price expectation</li>
-          <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#e8703a" stroke-width="2"/><path d="M6 10.5l2.5 2.5L14 7.5" stroke="#e8703a" stroke-width="2" stroke-linecap="round"/></svg>One buyer per lead — sold to you and to nobody else, ever</li>
-          <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#e8703a" stroke-width="2"/><path d="M6 10.5l2.5 2.5L14 7.5" stroke="#e8703a" stroke-width="2" stroke-linecap="round"/></svg>Seven days to flag a bad lead, no interrogation attached</li>
+          <li>Why they're selling</li>
+          <li>How soon they want to move</li>
+          <li>What shape the house is in</li>
+          <li>What they want for it</li>
+        </ul>
+      </div>
+      <div class="specbox">
+        <h3>The dates</h3>
+        <ul>
+          <li>When we spoke with the homeowner — so you can judge how fresh it is yourself</li>
+          <li>When the lead was delivered to you — which starts your 10-day window to flag a problem</li>
         </ul>
       </div>
     </div>
+    <p class="specnote">The four answers are written down the way the homeowner said them, not scored or graded. That's deliberate: you can confirm or disprove every one of them on your first call, which is not something a motivation score lets you do. Where we happen to hold more — an email address, a second number, whether the property is occupied — it comes with the lead, but it isn't promised, and a lead is never short of what's listed above.</p>
   </div>
 </section>
 
-<section class="block why" id="how">
+<section class="block" id="junk">
   <div class="wrap">
-    <p class="kicker">How it works</p>
-    <h2>Three steps, and you own the whole record.</h2>
-    <div class="steps">
-      <div class="step">
-        <p class="num">STEP 1</p>
-        <h3>We find the seller</h3>
-        <p>We do the outreach ourselves — knocking and calling homeowners directly. No recycled marketplace lists and no lead resold from somewhere else.</p>
+    <p class="kicker">The junk guarantee</p>
+    <h2>If a lead is junk, you don't pay for it.</h2>
+    <p class="sub">"Junk" is a written list of twelve reasons, not our opinion of your complaint. You have ten days. And we don't ask you to prove anything — no call logs, no screenshots, no recordings. Everybody else in this business wants documentation. We take your word for it.</p>
+    <div class="junkgrid">
+      <div class="junkcard">
+        <h3>The twelve reasons — claim any of them</h3>
+        <ol>
+          <li>The phone number is dead or wrong, or it reaches someone who isn't the homeowner we described.</li>
+          <li>The property was listed on the MLS with an agent when we sold you the lead.</li>
+          <li>The property was already under contract or already sold when we sold you the lead.</li>
+          <li>The person we spoke to doesn't hold title to the property.</li>
+          <li>The "seller" is another wholesaler or an agent shopping a contract, not the owner.</li>
+          <li>It's a mobile home without the land, and the lead didn't say so.</li>
+          <li>It's vacant land with no structure on it.</li>
+          <li>It isn't residential — commercial, industrial or agricultural.</li>
+          <li>The address is wrong or doesn't exist.</li>
+          <li>It's a duplicate — we already sold you this same property. No time limit on this one.</li>
+          <li>It's spam or fake.</li>
+          <li>The homeowner denies the substance of the lead — they tell you they never said they wanted to sell, or that they aren't selling at all.</li>
+        </ol>
       </div>
-      <div class="step">
-        <p class="num">STEP 2</p>
-        <h3>We qualify on the call</h3>
-        <p>We ask the questions you would ask: why they are selling, how soon they need to move, what shape the property is in, and what they expect for it.</p>
-      </div>
-      <div class="step">
-        <p class="num">STEP 3</p>
-        <h3>You get the whole conversation</h3>
-        <p>The complete transcript plus the qualification summary lands in your inbox. You read the seller's own words, then decide whether the lead is worth your time.</p>
+      <div class="junkcard not">
+        <h3>What isn't junk — said out loud, not buried</h3>
+        <p class="big">We sell you a real conversation with a real owner. We can't sell you their decision.</p>
+        <p>The homeowner's own behaviour is never junk: not answering, changing their mind, wanting more money than you'll pay, going quiet, or selling to somebody else.</p>
+        <p>Neither is a disagreement about degree. If the lead says they want to move in 30 days and they tell you 90, that's a person whose situation moved, or one telling two people two slightly different things. Reason twelve covers a flat denial only — never a number that shifted, a condition described more or less harshly, or a price expectation that changed.</p>
+        <p>On reason twelve we go back to the homeowner and settle it ourselves, because we hold the original record and you shouldn't have to argue. It takes as long as it takes to reach them. <b>If we can't reach them at all, the claim is paid</b> — we don't get to win by failing to make contact.</p>
       </div>
     </div>
-  </div>
-</section>
-
-<section class="block">
-  <div class="wrap">
-    <p class="kicker">Why buyers work with us</p>
-    <h2>Built for people who buy leads for a living.</h2>
-    <div class="why-grid">
-      <div class="why-item">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M4 12h3l2.5-6 4 13 2.5-7h4" stroke="#3f5666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <div><h3>You judge motivation yourself</h3>
-        <p>Motivation is the only thing that decides whether a lead converts, and it is exactly the thing a badge cannot tell you. Read the conversation and make your own call.</p></div>
-      </div>
-      <div class="why-item">
-        <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="10" width="16" height="10" rx="2" stroke="#3f5666" stroke-width="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3" stroke="#3f5666" stroke-width="2" stroke-linecap="round"/></svg>
-        <div><h3>Exclusive means exclusive</h3>
-        <p>We sell each lead one time, to one buyer. Not resold next week at a discount, not dropped onto a marketplace later. You are never racing another investor to the same phone.</p></div>
-      </div>
-      <div class="why-item">
-        <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#3f5666" stroke-width="2"/><path d="M12 7v5l3.5 2.5" stroke="#3f5666" stroke-width="2" stroke-linecap="round"/></svg>
-        <div><h3>No contracts, no minimums</h3>
-        <p>Buy a lead when one fits what you are working on. There is no subscription to cancel and no monthly volume you have to commit to in advance.</p></div>
-      </div>
-      <div class="why-item">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z" stroke="#3f5666" stroke-width="2" stroke-linejoin="round"/><path d="M9 12l2 2 4-4.5" stroke="#3f5666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <div><h3>A refund you do not have to fight for</h3>
-        <p>Dead number, wrong owner, already listed with an agent — tell us within seven days and it is a replacement or your money back, whichever you prefer.</p></div>
-      </div>
+    <div class="terms">
+      <span class="term"><b>10 days</b> to claim</span>
+      <span class="term"><b>No proof</b> required, ever</span>
+      <span class="term">Paid as <b>account credit</b>, at the full price you paid</span>
+      <span class="term"><b>Same business day</b> on the first eleven reasons</span>
+      <span class="term">Credit you spend on <b>any lead you choose</b></span>
     </div>
     <div class="honest">
-      <p><b>Straight about what this is:</b> a WarmKnock lead is a homeowner who had a real conversation with us and told us where they stand. It is not a signed contract and it is not a guarantee of a deal. What we promise is that nothing is hidden from you — you see the same conversation we saw, and you decide from there.</p>
+      <p><b>Straight about the one limit:</b> the first eleven reasons are unconditional and stay that way no matter how often you claim them. Reason twelve is the one judgement call on the list, so it's the only one we rate-limit — if your claim rate on it gets far out of line with everybody else's, we'll stop selling to you rather than argue about it. Everything else stays open.</p>
     </div>
   </div>
 </section>
 
 <section class="block contact" id="contact">
   <div class="wrap">
-    <p class="kicker" style="color:var(--ember)">Founding buyers</p>
-    <h2>Your first lead is free.</h2>
-    <p class="sub">We are onboarding a small group of founding buyers right now. Take one qualified lead, transcript and all, at no cost — then tell us whether it was worth paying for. Founding-buyer pricing holds for the first buyers in the door.</p>
+    <h2>Buying leads for a living? Let's talk.</h2>
+    <p class="sub">We'd rather have a conversation than sell you something off a webpage. Tell us where you buy and what you do with a lead, and we'll tell you straight whether we're a fit.</p>
     <div class="ctas">
-      <a class="btn primary" href="mailto:hello@warmknock.com?subject=Founding%20buyer%20%E2%80%94%20free%20lead&body=Where%20you%20buy%3A%0A%0AWhat%20you%20do%20with%20a%20lead%20(assign%2C%20buy%20and%20hold%2C%20both)%3A%0A%0ABest%20way%20to%20reach%20you%3A">Email us to claim it</a>
+      <a class="btn primary" href="mailto:hello@warmknock.com?subject=WarmKnock%20%E2%80%94%20buying%20leads&body=Where%20you%20buy%20(metros)%3A%0A%0AProperty%20type%20and%20price%20range%3A%0A%0ARoughly%20how%20many%20leads%20a%20month%3A%0A%0ABest%20way%20to%20reach%20you%3A">Email us</a>
     </div>
     <p class="reach">Or write to us directly: <a href="mailto:hello@warmknock.com">hello@warmknock.com</a></p>
   </div>
