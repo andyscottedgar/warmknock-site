@@ -108,6 +108,37 @@
   .contact .reach a{color:var(--ember);text-decoration:none;font-weight:600}
   .contact .reach a:hover{text-decoration:underline}
 
+  /* buyer intake form */
+  .bform{max-width:660px;margin:30px auto 0;text-align:left;background:rgba(255,255,255,.045);
+    border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:26px 24px}
+  .bform .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:640px){.bform .row{grid-template-columns:1fr}}
+  .bform .fld{margin-bottom:14px}
+  .bform label{display:block;font-size:13.5px;font-weight:700;color:#d6dade;margin-bottom:6px;
+    letter-spacing:.01em}
+  .bform label .opt{font-weight:500;color:#8b959e}
+  .bform input,.bform select,.bform textarea{width:100%;font-family:var(--sans);font-size:15.5px;
+    color:#f0eee9;background:rgba(0,0,0,.28);border:1px solid #3d474f;border-radius:9px;
+    padding:11px 13px;line-height:1.45}
+  .bform textarea{min-height:96px;resize:vertical}
+  .bform input::placeholder,.bform textarea::placeholder{color:#78828b}
+  .bform input:focus,.bform select:focus,.bform textarea:focus{outline:none;border-color:var(--ember);
+    box-shadow:0 0 0 3px rgba(232,112,58,.18)}
+  .bform select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,#8b959e 50%),linear-gradient(135deg,#8b959e 50%,transparent 50%);
+    background-position:calc(100% - 19px) 51%,calc(100% - 13px) 51%;background-size:6px 6px,6px 6px;
+    background-repeat:no-repeat;padding-right:38px}
+  .bform select option{background:var(--coal);color:#f0eee9}
+  .bform .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+  .bform .go{margin-top:6px;text-align:center}
+  .bform button{font-family:var(--sans);font-weight:700;font-size:16px;border-radius:8px;
+    padding:14px 30px;border:2px solid transparent;background:var(--ember);color:#1a0d06;cursor:pointer}
+  .bform button:hover{background:var(--ember-deep);color:#fff}
+  .bform button[disabled]{opacity:.6;cursor:default}
+  .bform .fine{font-size:13px;color:#8b959e;margin-top:12px;text-align:center}
+  .bform .done{text-align:center;padding:26px 8px}
+  .bform .done b{display:block;font-size:19px;color:#fff;margin-bottom:8px}
+  .bform .done p{color:#b8bfc7;font-size:15.5px}
+
   footer{background:var(--coal-deep);color:#828d97;padding:30px 0 40px;font-size:13px;line-height:1.7}
   footer .fbrand{display:flex;align-items:center;gap:8px;color:#d6dade;font-weight:800;font-size:18px;
     margin-bottom:10px;letter-spacing:-.02em}
@@ -258,9 +289,57 @@
   <div class="wrap">
     <h2>Buying leads for a living? Let's talk.</h2>
     <p class="sub">We'd rather have a conversation than sell you something off a webpage. Tell us where you buy and what you do with a lead, and we'll tell you straight whether we're a fit.</p>
-    <div class="ctas">
-      <a class="btn primary" href="mailto:hello@warmknock.com?subject=WarmKnock%20%E2%80%94%20buying%20leads&body=Where%20you%20buy%20(metros)%3A%0A%0AProperty%20type%20and%20price%20range%3A%0A%0ARoughly%20how%20many%20leads%20a%20month%3A%0A%0ABest%20way%20to%20reach%20you%3A">Email us</a>
-    </div>
+    <form class="bform" id="bform" novalidate>
+      <div class="row">
+        <div class="fld">
+          <label for="b-name">Your name</label>
+          <input id="b-name" name="name" autocomplete="name" required>
+        </div>
+        <div class="fld">
+          <label for="b-company">Company <span class="opt">(optional)</span></label>
+          <input id="b-company" name="company" autocomplete="organization">
+        </div>
+      </div>
+      <div class="row">
+        <div class="fld">
+          <label for="b-email">Email</label>
+          <input id="b-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="fld">
+          <label for="b-phone">Phone <span class="opt">(optional)</span></label>
+          <input id="b-phone" name="phone" type="tel" autocomplete="tel">
+        </div>
+      </div>
+      <div class="fld">
+        <label for="b-metros">Where do you buy?</label>
+        <input id="b-metros" name="metros" required placeholder="Metros, counties or states — however you think about it">
+      </div>
+      <div class="row">
+        <div class="fld">
+          <label for="b-type">Property type and price range</label>
+          <input id="b-type" name="propertyType" required placeholder="e.g. single family, $80k–$250k">
+        </div>
+        <div class="fld">
+          <label for="b-vol">Roughly how many leads a month?</label>
+          <select id="b-vol" name="volume" required>
+            <option value="" selected disabled>Choose one…</option>
+            <option>Under 10</option>
+            <option>10–25</option>
+            <option>25–50</option>
+            <option>50–100</option>
+            <option>100+</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+      </div>
+      <div class="fld">
+        <label for="b-notes">What do you do with a lead? <span class="opt">(optional)</span></label>
+        <textarea id="b-notes" name="notes" placeholder="Wholesale, buy and hold, fix and flip, novation — and who does the calling"></textarea>
+      </div>
+      <div class="hp"><label for="b-website">Leave this empty</label><input id="b-website" name="website" tabindex="-1" autocomplete="off"></div>
+      <div class="go"><button type="submit">Start the conversation</button></div>
+      <p class="fine">We read every one of these ourselves. No autoresponder, no sales sequence.</p>
+    </form>
     <p class="reach">Or write to us directly: <a href="mailto:hello@warmknock.com">hello@warmknock.com</a></p>
   </div>
 </section>
@@ -284,5 +363,64 @@
   </div>
 </footer>
 
+<script>
+(function(){
+  // Google Apps Script web-app endpoint. See WarmKnock_BuyerForm_AppsScript.gs for how
+  // this is deployed and redeployed. Empty string = not wired up yet.
+  var ENDPOINT = "https://script.google.com/macros/s/AKfycbz2o6rdUGP1aFJWGdacD8OrQBb-ZFQG8HdrMiy-UQXnIgJ6-PnXzDzqk8EEUuUw1qen/exec";
+
+  var f = document.getElementById('bform');
+  if(!f) return;
+  var btn = f.querySelector('button[type=submit]');
+
+  function mailFallback(d){
+    var body =
+      "Name: "+(d.name||"")+
+      "\nCompany: "+(d.company||"")+
+      "\nEmail: "+(d.email||"")+
+      "\nPhone: "+(d.phone||"")+
+      "\nWhere they buy: "+(d.metros||"")+
+      "\nProperty type and price range: "+(d.propertyType||"")+
+      "\nLeads per month: "+(d.volume||"")+
+      "\nWhat they do with a lead: "+(d.notes||"");
+    location.href = "mailto:hello@warmknock.com?subject="+
+      encodeURIComponent("WarmKnock — buying leads")+"&body="+encodeURIComponent(body);
+    btn.disabled=false; btn.textContent="Start the conversation";
+  }
+
+  f.addEventListener('submit', function(ev){
+    ev.preventDefault();
+    if(!f.checkValidity()){ f.reportValidity(); return; }
+
+    var fd = new FormData(f), d = {};
+    fd.forEach(function(v,k){ d[k] = v; });
+    d.pageUrl = location.href;
+
+    btn.disabled = true; btn.textContent = "Sending…";
+
+    if(!ENDPOINT || ENDPOINT.indexOf("script.google.com") === -1){
+      mailFallback(d); return;
+    }
+
+    fetch(ENDPOINT, {
+      method: "POST",
+      // No Content-Type header on purpose: a plain POST is a "simple" CORS request
+      // and skips the preflight, which the Apps Script endpoint does not answer.
+      // Apps Script still reads the body via e.postData.contents.
+      body: JSON.stringify(d)
+    })
+    .then(function(r){ return r.json(); })
+    .then(function(j){
+      if(j && j.status === "success"){
+        f.innerHTML = '<div class="done"><b>Got it — thanks.</b>'+
+          '<p>We\u2019ll come back to you personally, usually within one business day.</p></div>';
+      } else {
+        mailFallback(d);
+      }
+    })
+    .catch(function(){ mailFallback(d); });
+  });
+})();
+</script>
 </body>
 </html>
